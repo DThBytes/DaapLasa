@@ -3,7 +3,7 @@ const Web3 = require('web3');
 const {abi, bytecode}=require('./compile');
 
 //Test in ganache
-const mnemonic = 'dilemma charge lobster today border distance alarm rely sun tissue climb brush';
+const mnemonic = 'vivid swamp diesel squeeze spider decrease chronic invite garment apart run inmate';
 const provider = new HDWalletProvider(mnemonic, 'http://localhost:8545');
 
 const web3 = new Web3(provider);
@@ -29,6 +29,8 @@ const deploy= async () => {
         .send({gas: gasEstimate, from: accounts[0]});
     
         console.log("Contract deployed to",result.options.address);
+        console.log("Contract details: ",result);
+
 };
 deploy();
 
