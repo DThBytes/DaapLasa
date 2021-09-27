@@ -2,7 +2,8 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const {abi, bytecode}=require('./compile');
 
-const mnemonic = 'warfare hint dutch diary favorite add cousin foil business neutral barrel outer';
+//Test in ganache
+const mnemonic = 'dilemma charge lobster today border distance alarm rely sun tissue climb brush';
 const provider = new HDWalletProvider(mnemonic, 'http://localhost:8545');
 
 const web3 = new Web3(provider);
@@ -30,3 +31,6 @@ const deploy= async () => {
         console.log("Contract deployed to",result.options.address);
 };
 deploy();
+
+//Test in ganache
+//contract: 0x4ff2e469b32852f152dfdc2aea9cc7c35752e6b4

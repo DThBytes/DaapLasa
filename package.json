@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "solc": "^0.8.7-fixed",
+    "ganache-cli": "^6.12.2",
+    "solc": "^0.8.8",
     "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.5.3"
   },
