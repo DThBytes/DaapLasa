@@ -3,7 +3,7 @@ const Web3 = require('web3');
 const {abi, bytecode}=require('./compile');
 
 //Test in ganache
-const mnemonic = 'phone clip vanish tissue record grow chase nominee describe small despair merry';
+const mnemonic = 'myth like bonus scare over problem client lizard pioneer submit female collect';
 const provider = new HDWalletProvider(mnemonic, 'http://localhost:8545');
 
 const web3 = new Web3(provider);
@@ -35,4 +35,4 @@ const deploy= async () => {
 deploy();
 
 //Test in ganache
-//contract: 0x8b76394992bb3865b06e712ea340d16406502a8a
+//contract: 0xe78a0f7e598cc8b0bb87894b0f60dd2a88d6a8ab
