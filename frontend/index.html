@@ -12,7 +12,7 @@
 <body>
     <button id="enableEthereumButton" class="btn btn-warning text-white d-none">Conectar Metamask</button>
     <p id="accountSelected" class="text-end p-4"></p>
-    <p id="balance" class="text-end p-4"></p>
+   
 
     <div>
         <h1 class="text-center mb-5">CryptoArgie Coin</h1>
@@ -22,6 +22,17 @@
             <input id="addressGetBalance" type="text" class="form-control" placeholder="Introduce una address">
             <button class="btn btn-success" type="button" id="btnGetBalance">Ver el balance</button>
             <p class="col-12 text-center p-3 h6 bg-secondary text-white mt-3">Balance: <span id="balance"></span></p>
+        </div>
+        <br><br><br>
+        <p>Realizar un transferencia una cuenta</p>
+        <div class="input-group mb-3">
+           <span class="input-group-text">Address de destino:</span>
+           <input type="text" name="" id="addressBeneficiaria" class="form-control" placeholder="Introduce una address">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Cantidad:</span>
+            <input type="number" class="form-control" id="cantidad" placeholder="Introduce una cantidad">
+            <button class="btn btn-success d-block" style="margin-left: auto;" id="btnTransferir">TRANSFERIR</button>
         </div>
     </div>
 
